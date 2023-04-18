@@ -24,7 +24,7 @@ public class NIF {
     public char getNIF() {
         return NIF;
     }
-
+    
     public char mostrarletra() {
 
         long resto = getNumeroDNI() % 23;
