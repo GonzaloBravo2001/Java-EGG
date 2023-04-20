@@ -24,6 +24,6 @@ public class Puntos {
     }
 
     public double calcular(){
-        double distancia = Math.sqrt(x1)
+        double distancia = Math.sqrt(x1);
     }
 }
