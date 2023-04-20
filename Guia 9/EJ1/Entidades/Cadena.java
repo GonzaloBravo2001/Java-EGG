@@ -5,12 +5,13 @@ public class Cadena {
     private int longitud;
 
     public Cadena(){
-
+        this.frase = "casa blanca";
+        this.longitud = this.frase.length();
     }
 
-    public void frase(String frase, int longitud){
+    public Cadena(String frase, int longitud){
         this.frase = frase;
-        this.longitud = frase.length();
+        this.longitud = longitud;
     }
     public void setFrase(String frase){
         this.frase = frase;
