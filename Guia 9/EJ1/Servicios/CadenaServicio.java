@@ -71,9 +71,8 @@ public class CadenaServicio {
     public void reemplazar(String letra) {
         char frasepred = ff.getFrase().charAt(0);
         for (int i = 0; i < ff.getLongitud(); i++) {
-
+            char reemplazar = letra.charAt(i);
             if (frasepred == 'a') {
-                char reemplazar = letra.charAt(i);
                 frasepred = reemplazar;
             }
         }

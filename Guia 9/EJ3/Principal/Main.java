@@ -10,8 +10,13 @@ public class Main {
         double [] B = new double[20];
 
         mostrar.inicializarA(A);
-        mostrar.mostrar(A);
+        System.out.println("------------");
+        mostrar.mostrarA(A);
+        System.out.println("------------");
         mostrar.ordenar(A);
-
+        mostrar.inicializarB(B, A);
+        System.out.println("------------");
+        mostrar.mostrarB(B);
+        System.out.println("------------");
     }
 }

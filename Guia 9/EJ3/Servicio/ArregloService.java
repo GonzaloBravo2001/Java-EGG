@@ -10,9 +10,9 @@ public class ArregloService {
         return A;
     }
 
-    public void mostrar(double[] A) {
+    public void mostrarA(double[] A) {
         for (int i = 0; i < A.length; i++) {
-            System.out.println(A[i]);
+            System.out.printf("%.2f\n", A[i]);
         }
     }
 
@@ -22,8 +22,17 @@ public class ArregloService {
 
     public double[] inicializarB(double[] B, double[] A){
         for(int i = 0; i < 10; i++){
-            B[i] = A[];
+            B[i] = A[i];
+        }
+        for(int i = 10; i < 20; i++ ){
+            B[i] = 0.5;
         }
         return B;
+    }
+
+    public void mostrarB(double[] B){
+        for (int i = 0; i < B.length; i++) {
+            System.out.printf("%.2f\n", B[i]);
+        }
     }
 }
