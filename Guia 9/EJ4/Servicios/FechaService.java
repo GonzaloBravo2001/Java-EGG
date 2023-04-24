@@ -7,7 +7,6 @@ public class FechaService {
 
     Date fechas = new Date(0, 0, 0);
 
-   
     public static Date fechaNacimiento() {
         Scanner input = new Scanner(System.in);
 

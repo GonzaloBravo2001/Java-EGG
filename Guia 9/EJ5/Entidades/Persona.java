@@ -3,26 +3,26 @@ package Entidades;
 import java.util.Date;
 
 public class Persona {
-    Date nombre = new Date();
-    Date fechaDeNacimiento = new Date();
+    private String nombre;
+    private Date fechaDeNacimiento;
 
     public Persona(){
 
     }
 
-    public Persona(Date nombre, Date fechaDeNacimiento){
+    public Persona(String nombre, Date fechaDeNacimiento){
         this.nombre = nombre;
-        this.fechaDeNacimiento = fechaDeNacimiento;
+        fechaDeNacimiento = new Date();
     }
 
-    public void setNombre(Date nombre){
+    public void setNombre(String nombre){
         this.nombre = nombre;
     }
-    public Date setFechaDeNacimiento(Date fechaDeNacimiento){
-        return this.fechaDeNacimiento = fechaDeNacimiento;
+    public void setFechaDeNacimiento(Date fechaDeNacimiento){
+        this.fechaDeNacimiento = fechaDeNacimiento;;
     }
 
-    public Date getNombre(){
+    public String getNombre(){
         return nombre;
     }
     public Date getFechaDeNacimiento(){
