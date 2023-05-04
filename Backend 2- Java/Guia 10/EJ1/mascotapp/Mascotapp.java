@@ -1,13 +1,10 @@
 package mascotapp;
 
+import java.util.Iterator;
 import java.util.Scanner;
 
 import servicios.MascotaService;
 
-//Diseñar un programa que lea y guarde razas de perros en un ArrayList de tipo String. El
-//programa pedirá una raza de perro en un bucle, el mismo se guardará en la lista y
-//después se le preguntará al usuario si quiere guardar otro perro o si quiere salir. Si decide
-//salir, se mostrará todos los perros guardados en el ArrayList.
 public class Mascotapp {
     public static void main(String[] args) {
         MascotaService mascota = new MascotaService();
@@ -22,6 +19,23 @@ public class Mascotapp {
             }
         }
         mascota.mostrarPerros();
+
+        System.out.println("Ingrese el perro que quiere eliminar...");
+        String pEliminar = input.next();
+        Iterator buscar = mascota.perros.iterator();
+        boolean encontrar = false;
+        while (buscar.hasNext()) {
+            if (buscar.next().equals(pEliminar)) {
+                buscar.remove();
+                mascota.mostrarPerros();
+                encontrar = true;
+            }
+        }
+        if(encontrar){
+            System.out.println("Se ha elimado el perro seleccionado.");
+        }else{
+            System.out.println("No se ha encontrado el perro seleccionado.");
+        }
         input.close();
     }
 }

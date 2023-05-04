@@ -3,8 +3,9 @@ import java.util.HashMap;
 import java.util.TreeSet;
 
 public class Detecciondeerrores {
-    ArrayList<Integer> listado = new ArrayList();
-    TreeSet<Integer> letras = new TreeSet();
-    HashMap<Integer, String> personas = new HashMap();
-
+    public static void main(String[] args) {
+        ArrayList<Integer> listado = new ArrayList<>();
+        TreeSet<String> letras = new TreeSet<>();
+        HashMap<Integer, String> personas = new HashMap<>();
+    }
 }
