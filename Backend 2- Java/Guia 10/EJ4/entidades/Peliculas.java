@@ -57,4 +57,16 @@ public class Peliculas {
             return Double.compare(pelicula1.getDuracion(), pelicula2.getDuracion());
         }
     };
+    public static Comparator<Peliculas> tituloAlfa = new Comparator<Peliculas>() {
+
+        public int compare(Peliculas pelicula1, Peliculas pelicula2) {
+            return pelicula1.getTitulo().compareTo(pelicula2.getTitulo());
+        }
+    };
+    public static Comparator<Peliculas> directorAlfa = new Comparator<Peliculas>() {
+
+        public int compare(Peliculas pelicula1, Peliculas pelicula2) {
+            return pelicula1.getDirector().compareTo(pelicula2.getDirector());
+        }
+    };
 }

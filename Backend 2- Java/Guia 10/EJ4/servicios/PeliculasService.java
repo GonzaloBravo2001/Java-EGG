@@ -61,4 +61,18 @@ public class PeliculasService {
         }
     }
 
+    public void orderAlfa(){
+        Collections.sort(peli, Peliculas.tituloAlfa);
+        for(Peliculas mostrar : peli){
+            System.out.println(mostrar);
+        }
+    }
+    
+    public void orderAlfaDirector(){
+        Collections.sort(peli, Peliculas.directorAlfa);
+        for(Peliculas mostrar : peli){
+            System.out.println(mostrar);
+        }
+    }
+
 }
