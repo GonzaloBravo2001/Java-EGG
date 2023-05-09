@@ -1,7 +1,7 @@
 package service;
 
-import java.util.HashSet;
 import java.util.Scanner;
+import java.util.TreeSet;
 
 public class PaisesService {
     Scanner input = new Scanner(System.in);
@@ -11,7 +11,7 @@ public class PaisesService {
             System.out.println("Ingrese el pais que desee...");
             String pais = input.nextLine();
             input.nextLine();
-            HashSet<String> paises = new HashSet<>();
+            TreeSet<String> paises = new TreeSet<>();
             paises.add(pais);
             
             System.out.println("¿Desea agregar otro pais? o salir?");
