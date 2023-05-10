@@ -17,7 +17,6 @@ public class AlumnoService {
             System.out.println("Ingrese el nombre del alumno.");
             String nombre = input.nextLine().toLowerCase();
 
-            // "nota" almacena las notas ingresadas en un arraylist
             ArrayList<Integer> nota = new ArrayList<>();
             for (int i = 1; i <= 3; i++) {
                 System.out.println("Ingrese la nota del alumno " + i + " ");
@@ -25,12 +24,11 @@ public class AlumnoService {
                 input.nextLine();
                 nota.add(notas);
             }
-            // Creo el objeto alumno para almacenar el nombre y la nota
             Alumno alumno = new Alumno(nombre, nota);
             lista.add(alumno);
 
             System.out.println("¿Desea seguir agregando alumnos?");
-            String respuesta = input.nextLine().toLowerCase(); // Convierto a minuscula
+            String respuesta = input.nextLine().toLowerCase(); 
             if (respuesta.equals("no")) {
                 break;
             }
