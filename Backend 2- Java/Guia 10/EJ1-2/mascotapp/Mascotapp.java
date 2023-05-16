@@ -35,6 +35,7 @@ public class Mascotapp {
             System.out.println("Se ha elimado el perro seleccionado.");
         }else{
             System.out.println("No se ha encontrado el perro seleccionado.");
+            mascota.mostrarPerros();
         }
         input.close();
     }
